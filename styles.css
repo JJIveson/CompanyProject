@@ -1,0 +1,122 @@
+/*Full document Styling*/
+
+html {
+    font-family: 'Baloo Tammudu', serif;
+    font-size: 22px;
+    text-align: center;
+    background-color: #fff4e6;
+}
+
+body {
+    margin: 0px;
+}
+
+/*Header Styling*/
+.header {
+    background-color: none;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.header h1 {
+    font-size: 75px;
+    font-family: 'Baloo Tammudu';
+    color: #babfa0;
+    margin-bottom: 0px;
+}
+
+nav {
+    background-color: #fff4e6;
+    width: 100%;
+    height: 100px;
+    margin: 0px;    
+    list-style-type: none;
+    
+}
+
+nav ul {
+    padding-inline-start: 0px;
+}
+
+nav li {
+    display: inline-block;
+    text-align: center;
+}
+
+
+a {
+    color: #babfa0;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 50px;
+    margin-top: 0;
+}
+
+
+/*Main Styling*/
+
+
+
+    /*Splash Styling*/
+
+    .splash {
+        display: flexbox;
+        background-image: url(images/homepage.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 900px;
+    }
+
+    #boxcontent {
+        color: white;
+        padding: 50px;
+        border: 15px solid white;
+        margin: auto auto;
+        text-align: center;
+        height: 250px;
+        width: 800px;
+        vertical-align: auto;
+    }
+
+    #boxcontent h2 {
+        font-size: 60px;
+    }
+
+    #boxcontent h4 {
+        font-size: 40px;
+    }
+
+
+    /*Products Styling*/
+    #products {
+
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .product {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .products img {
+        height: 300px;
+        width: 300px;
+    }
+
+    /*Ethos Styling*/
+
+
+
+    /*Contact Styling*/
+
+
+
+/*Footer Styling*/
