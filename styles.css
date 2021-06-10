@@ -1,122 +1,138 @@
-/*Full document Styling*/
-
-html {
-    font-family: 'Baloo Tammudu', serif;
-    font-size: 22px;
-    text-align: center;
-    background-color: #fff4e6;
-}
-
-body {
-    margin: 0px;
-}
-
-/*Header Styling*/
-.header {
-    background-color: none;
-    width: 100%;
-    margin-top: 0px;
-}
-
+/*Nav*/
 .header h1 {
-    font-size: 75px;
-    font-family: 'Baloo Tammudu';
-    color: #babfa0;
-    margin-bottom: 0px;
+    color: firebrick;
+    text-align: center;
+}
+.flexbox-nav {
+    display: flex;
+    justify-content: space-around;
 }
 
-nav {
-    background-color: #fff4e6;
-    width: 100%;
-    height: 100px;
-    margin: 0px;    
+ul {
+    display: flex;
     list-style-type: none;
+}
+
+ul li {
+    padding: 30px;
+    text-decoration: none;
+}
+
+a{
+    color: green;
+    text-decoration: none;
+}
+
+/*Splash*/
+
+.flexbox-splash {
+    display: flex;
+    width: auto;
+    border: 2px solid black;
+    background-image: url();
+    background-size: cover;
+    height: 300px;    
+    justify-content: space-around;
+}
+
+.innerBox {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid black;
+    min-height: 50px;
+    align-self: center;
+    background-color: none;
+    text-align: center;
+}
+
+/*Boxes*/
+.products h2 {
+    color: firebrick;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.flexbox-products {
+    display: flex;    
+    width: auto;
+    border: 0px solid black;
+    background-image: url(pepe.jpg);
+    background-size: contain;
+    background-color: firebrick;
+    justify-content: space-around;
+    /*Row positioning:
+    flex-wrap: wrap;  
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;*/
+    /*Column positioning:
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.flexbox-product {
+    width: 200px;
+    margin: 10px;
+    border: 3px solid black;
+    background-color: darkseagreen;
+}
+
+.product-1 {
+    min-height: 100px;
+    flex-shrink: 0;
+}
+
+.product-2 {
+    min-height: 50px;
+    align-self: center;
+    background-color: none;
+    text-align: center;
+}
+
+.product-3 {
+    min-height: 200px;
+}
+/*Ethos*/
+/*Contact*/
+
+.contacts h2 {
+    text-align: center;
+    color: firebrick;
+}
+
+.flexbox-contact {
+    display: flex;
+    width: auto;
+    border: 2px solid black;
+    height: 300px;    
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.contact {
+    width: 200px;
+    min-height: 100px;
+    margin: 10px;
+    align-self: center;
+    border: 3px solid black;
+}
+
+/*Footer*/
+
+.flexbox-footer {
+    display: flex;
+    width: auto;
+    height: 20px;
+    padding-top: 50px;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.footer {
+    text-align: center;
+    color: firebrick;
     
 }
-
-nav ul {
-    padding-inline-start: 0px;
-}
-
-nav li {
-    display: inline-block;
-    text-align: center;
-}
-
-
-a {
-    color: #babfa0;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 50px;
-    margin-top: 0;
-}
-
-
-/*Main Styling*/
-
-
-
-    /*Splash Styling*/
-
-    .splash {
-        display: flexbox;
-        background-image: url(images/homepage.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 900px;
-    }
-
-    #boxcontent {
-        color: white;
-        padding: 50px;
-        border: 15px solid white;
-        margin: auto auto;
-        text-align: center;
-        height: 250px;
-        width: 800px;
-        vertical-align: auto;
-    }
-
-    #boxcontent h2 {
-        font-size: 60px;
-    }
-
-    #boxcontent h4 {
-        font-size: 40px;
-    }
-
-
-    /*Products Styling*/
-    #products {
-
-    }
-
-    .products {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .product {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .products img {
-        height: 300px;
-        width: 300px;
-    }
-
-    /*Ethos Styling*/
-
-
-
-    /*Contact Styling*/
-
-
-
-/*Footer Styling*/
