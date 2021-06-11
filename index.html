@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="header">
-      <h1>Sabó.</h1>
+      <h1>SABÓ.</h1>
         <nav class="flexbox-nav">
           <ul>
             <li><a href="#product">Products</a></li>
@@ -86,15 +86,40 @@
 
       <div id="contact">
         <h2>Contact</h2>
-          <div class="flexbox-contact">
-            <div class="contact">Contact</div>
+          <div class="flexbox-contacts">
+            <div class="flexbox-contact">
+              <div class="description">
+                <p>If you have any questions regarding the products you can contact us by filling the form below.</p> 
+                <p>We aim to respond to all questions within 24h.</p>
+                <p>Thank you for showing an interest in our products.</p>
+              </div>
+              <div class="form">
+                <form action="form.html" method="POST">
+                  <section>
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" type="text" required>
+                  </section>
+                  <section>
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="text" required>
+                  </section>
+                  <section>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" cols="40"></textarea>
+                  </section>
+                  <section>
+                    <button type="submit">Submit</button>
+                  </section>
+                </form>
+              </div>
+            </div>
           </div>
       </div>
 
     </div>
 
     <div class="flexbox-footer">
-      <div class="footer">&#169; Sabó. 2021</div>
+      <div class="footer">&#169; SABÓ. 2021</div>
     </div>
   </body>
 </html>

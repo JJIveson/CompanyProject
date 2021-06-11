@@ -45,6 +45,10 @@ a{
     margin-top: 0;
 }
 
+a:hover {
+    color: #60645e;
+}
+
 /*Splash*/
 
 .flexbox-splash {
@@ -114,7 +118,6 @@ a{
 .product-1 {
     min-height: 400px;
     min-width: 400px;
-    padding-top: 10px;
 }
 
 .product-1 img {
@@ -191,23 +194,38 @@ a{
     text-align: center;
     color: #8a8f75;
     font-size: 60px;
+    margin-bottom: 20px;
 }
 
-.flexbox-contact {
+.flexbox-contacts {
     display: flex;
     width: auto;
-    border: 2px solid black;
-    height: 300px;    
+    border: 0px solid black;
+    height: 500px;
+    background-color: #d8d7c8;    
     justify-content: space-around;
     padding-top: 50px;
 }
 
-.contact {
+.description {
+    color: #60645e;
+}
+
+.form {
     width: 200px;
     min-height: 100px;
     margin: 10px;
     align-self: center;
-    border: 3px solid black;
+    border: 0px solid black;    
+    color: #60645e;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin-top: 30px;
 }
 
 /*Footer*/
@@ -217,8 +235,9 @@ a{
     width: auto;
     height: 20px;
     padding-top: 50px;
-    justify-content: space-between;
+    justify-content: center;
     align-self: center;
+    align-items: center;
 }
 
 .footer {
