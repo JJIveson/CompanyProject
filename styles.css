@@ -6,6 +6,9 @@ html {
     background-color: white;
 }
 
+/*Media Querry*/
+
+
 
 /*Nav Styling*/
 .header{
@@ -82,7 +85,7 @@ a:hover {
     font-size: 40px;
 }
 
-/*Boxes*/
+/*Product*/
 #product h2 {
     color: #8a8f75;
     font-weight: bold;
