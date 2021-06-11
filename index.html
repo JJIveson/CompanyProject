@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap" rel="stylesheet" type="text/css">
   </head>
   <body>
+
+<!--Header Section-->
+
     <div class="header">
       <h1>SABÓ.</h1>
         <nav class="flexbox-nav">
@@ -24,6 +27,8 @@
 
     <div class="main">
 
+<!--Splash Section-->
+
       <div class="splash">
         <div class="flexbox-splash">
           <div class="innerBox">
@@ -32,36 +37,70 @@
           </div>
         </div>
       </div>
-        
+  
+<!--Product Section-->    
+
       <div id="product">
         <h2>Products</h2>
           <div class="flexbox-products">
+            <a href="#">
             <div class="flexbox-product">
-              <div class="product-1">
-                <img src="images/charcoal_mint.jpg">
+              <div class="product-1" >
+                <img onmouseover="changePhoto1()" onmouseout="changePhoto2()" id="soap" src="images/charcoal_mint.jpg">
               </div>
               <div class="content">
                 <h3>Soaps</h3>
               </div>
             </div>
+            </a>
+            <a href="#">
             <div class="flexbox-product">
               <div class="product-2">
-                <img src="images/mini_set.jpg">
+                <img onmouseover="changePhoto3()" onmouseout="changePhoto4()" src="images/mini_set.jpg" id="collection">
               </div>
               <div class="content">
                 <h3>Collections</h3>
               </div>
             </div>
+            </a>
+            <a href="#">
             <div class="flexbox-product">
               <div class="product-3">
-                <img src="images/konjac.jpg">
+                <img onmouseover="changePhoto5()" onmouseout="changePhoto6()" src="images/konjac.jpg" id="other" >
               </div>
               <div class="content">
                 <h3>Accessories</h3>
               </div>
             </div>
+            </a>
           </div>
-      </div>    
+      </div>
+      
+
+<!--Product JavaScript Section-->     
+
+      <script>
+        function changePhoto1() {
+          document.getElementById("soap").src = "images/oatmeal_op.jpg";
+        }
+        function changePhoto2() {
+          document.getElementById("soap").src = "images/charcoal_mint.jpg";
+        }
+        function changePhoto3() {
+          document.getElementById("collection").src = "images/Rise_shine.jpg";
+        }
+        function changePhoto4() {
+          document.getElementById("collection").src = "images/mini_set.jpg";
+        }
+        function changePhoto5() {
+          document.getElementById("other").src = "images/holder.jpg";
+        }
+        function changePhoto6() {
+          document.getElementById("other").src = "images/konjac.jpg";
+        }
+      </script>
+
+<!--Ethos Section-->
 
       <div id="ethos">
         <h2>Ethos</h2>
@@ -83,6 +122,8 @@
           </div>
         </div>
       </div>
+
+<!--Contact Section-->      
 
       <div id="contact">
         <h2>Contact</h2>
@@ -117,6 +158,8 @@
       </div>
 
     </div>
+
+<!--Footer Section-->
 
     <div class="flexbox-footer">
       <div class="footer">&#169; SABÓ. 2021</div>
