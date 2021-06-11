@@ -89,12 +89,13 @@ a{
 .flexbox-products {
     display: flex;    
     width: auto;
-    height: 600px;
+    height: 650px;
     border: 0px solid black;
     background-color: #d8d7c8;
     justify-content: space-around;
     align-items: center;
 }
+
 
 .flexbox-product {
     width: 420px;
@@ -113,7 +114,6 @@ a{
 .product-1 {
     min-height: 400px;
     min-width: 400px;
-    padding-top: 10px;
 }
 
 .product-1 img {
