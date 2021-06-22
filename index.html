@@ -18,9 +18,9 @@
       <h1>SABÓ.</h1>
         <nav class="flexbox-nav">
           <ul>
-            <li><a href="#product">Products</a></li>
-            <li><a href="#ethos">Ethos</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#product">products</a></li>
+            <li><a href="#ethos">ethos</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
     </div>
@@ -32,8 +32,8 @@
       <div class="splash">
         <div class="flexbox-splash">
           <div class="innerBox">
-            <h2>Soaps that make you feel good</h2>
-            <h4>Natural 	&nbsp; :	&nbsp;  Vegan 	&nbsp; :	&nbsp;  Cruelty Free</h4>
+            <h2>soaps that make you feel good</h2>
+            <h4>natural 	&nbsp;	&nbsp;  vegan 	&nbsp;	&nbsp;  cruelty free</h4>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@
             <a href="#">
             <div class="flexbox-product">
               <div class="product-3">
-                <img onmouseover="changePhoto5()" onmouseout="changePhoto6()" src="images/konjac.jpg" id="other" >
+                <img onmouseover="changePhoto5()" onmouseout="changePhoto6()" src="images/konjac.jpg" id="other">
               </div>
               <div class="content">
                 <h3>Accessories</h3>
@@ -93,7 +93,7 @@
           document.getElementById("collection").src = "images/mini_set.jpg";
         }
         function changePhoto5() {
-          document.getElementById("other").src = "images/holder.jpg";
+          document.getElementById("other").src = "images/holder.JPG";
         }
         function changePhoto6() {
           document.getElementById("other").src = "images/konjac.jpg";
@@ -117,12 +117,26 @@
               <p class="left">Central to our values is reducing waste to leave as little trace as possible. All our packaging comes from either recycled materials, is recyclable, biodegradable, compostable, or a combination of all these. </p>
             </div>
             <div class="ingredientsphoto">
-              <img src="images/botanicals_portrait.jpg">
+              <img src="images/botanicals_portrait.jpg" id="smaller">
             </div>
           </div>
         </div>
       </div>
 
+    <script>
+            var image = document.getElementById("smaller");
+            var currentPos = 0;
+            var images = ["images/botanicals_portrait.jpg", "images/flowers1.jpg"]
+
+            function changePhoto() {
+                if ((++currentPos >= images.length) && (max-width <= 1050px))
+                    currentPos = 0;
+
+                image.src = images[currentPos];
+            }
+
+            setInterval(changePhoto, 3000);
+    </script>
 <!--Contact Section-->      
 
       <div id="contact">
